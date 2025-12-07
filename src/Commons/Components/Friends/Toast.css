@@ -1,0 +1,87 @@
+.Toastify__toast--success {
+    background-color:   rgba(2, 4, 15, 1) !important;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F9F7F7;
+    font-family: "Instrument Sans", serif;
+    width: 90% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 16px;
+    margin: 0 auto;
+    margin-top: 16px;
+    border-radius: 16px !important;
+    position: relative;
+    z-index: 999;
+  }
+
+  .Toastify__toast-container--top-right {
+    width: 100% !important;
+  }
+
+  .friendsSuccessDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .friendSuccess{
+    color: #1CC939;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+    font-family: "Instrument Sans", serif;
+}
+
+.friendCancel{
+    color: #F20C10;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+    font-family: "Instrument Sans", serif;
+}
+
+.friendSuccessText{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F9F7F7;
+    margin: 0;
+
+}
+
+
+  .Toastify__toast--error {
+    background-color:   rgba(2, 4, 15, 1) !important;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F9F7F7;
+    font-family: "Instrument Sans", serif;
+    width: 90% !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    margin: 0 auto;
+    margin-top: 16px;
+    border-radius: 16px !important;
+    position: relative;
+    z-index: 999;
+
+  }
+
+
+
+  .Toastify__progress-bar--success {
+    visibility: hidden !important;
+  }
+
+
+  .Toastify__progress-bar--error {
+    visibility: hidden !important;
+  }

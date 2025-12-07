@@ -1,0 +1,75 @@
+.boost {
+  font-family: "Inria Serif", serif;
+  padding: 0 26px;
+}
+
+.boost h2 {
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 2px;
+  color: #64ffff;
+}
+
+.boost h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #64ffff;
+}
+
+.boost nav {
+  margin-top: 40px;
+}
+
+.boost nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.boost nav li {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f9f7f7;
+  padding: 8px 15px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.boost nav ul .activePage {
+  position: relative;
+  background-color: transparent;
+  color: #64ffff;
+  border-bottom: 0.3px solid #64ffff;
+}
+
+.boost nav ul .activePage:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #64ffff;
+  filter: blur(25px);
+  pointer-events: none;
+  border-radius: 50px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .boost nav {
+    margin-top: 10px;
+  }
+}

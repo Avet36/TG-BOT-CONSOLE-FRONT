@@ -1,0 +1,223 @@
+.bot {
+  border: 1px solid #64ffff;
+  border-radius: 32px;
+  background-color: #02040f;
+  padding: 16px;
+  margin-top: 50px;
+}
+
+.bot .assistant {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.bot .assistant .assistantIcon {
+  border-radius: 23px;
+  background-color: rgba(217, 217, 217, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 23px 23px 23px;
+}
+
+.bot .assistant .assistantText h2 {
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #64ffff;
+}
+
+.bot .assistant .assistantText p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #f9f7f7;
+  font-family: "Instrument Sans", serif;
+  margin: 0;
+  margin-top: 7px;
+}
+
+.bot button {
+  width: 101px;
+  height: 26px;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  color: #02040f;
+  border-radius: 18px;
+  background-color: #64ffff;
+  box-shadow: rgba(100, 255, 255, 0.5) 3.95px 3.95px 0.6px;
+  position: relative;
+  border: none;
+  z-index: 2;
+  display: block;
+  margin-left: auto;
+  margin-top: 15px;
+  right: 13px;
+  bottom: 13px;
+}
+
+/* modal styles */
+
+.botOverlay {
+  position: fixed;
+  background-color: rgba(217, 217, 217, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  opacity: 0.2;
+}
+
+.botModal {
+  background-color: #02040f;
+  border-radius: 32px 32px 0 0;
+  padding: 26px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: -webkit-fill-available;
+  height: calc(65% - 100px);
+
+  border: 1px solid #64ffff;
+}
+
+.botModal .modalText {
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.botModal .modalText h2 {
+  width: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.botModal .cancelBotModal {
+  float: right;
+}
+
+.botModal .modalToken {
+  margin-top: 50px;
+}
+
+.modalToken h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0;
+  color: #f9f7f7;
+}
+
+.modalToken .selectToken {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  margin-top: 8px;
+  border-radius: 18px;
+  background-color: rgba(217, 217, 217, 0.2);
+}
+
+.modalToken .selectToken .textAndImg {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.modalToken .selectToken p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.botModal button {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  width: 212px;
+  height: 43px;
+  color: #02040f;
+  border-radius: 18px;
+  background-color: #64ffff;
+  box-shadow: rgba(100, 255, 255, 0.5) 3.95px 3.95px 0.6px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%);
+  border: none;
+  z-index: 2;
+}
+
+.botModal .modalIconBlock {
+  padding: 16px 23px 22px 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(217, 217, 217, 0.2);
+  border-radius: 23px;
+  margin: 0 auto;
+}
+
+.botModal .botLogoPoint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 38px;
+  margin-top: 30px;
+}
+
+.botModal .botLogoPoint p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #f9f7f7;
+  margin: 0;
+}
+
+@media screen and (max-width: 400px) {
+  .bot .assistant .assistantIcon {
+    padding: 16px;
+  }
+  .bot .assistant .assistantIcon img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .bot .assistant .assistantText p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .bot button {
+    width: 85px;
+  }
+
+  .bot {
+    padding-bottom: 0;
+  }
+  .botModalFirst {
+    height: 4000px;
+  }
+  .botModalFirst .modalToken {
+    margin-top: 25px;
+  }
+
+  .botModalFirst button {
+    margin-top: 35px;
+  }
+}

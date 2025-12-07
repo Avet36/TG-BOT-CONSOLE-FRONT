@@ -1,0 +1,151 @@
+.upgradeOverlay {
+  position: fixed;
+  background-color: rgba(217, 217, 217, 0.4);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+}
+
+.upgradePopUp {
+  width: 323px;
+  height: 316px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #02040f;
+  border-radius: 29px;
+  padding: 20px 19px 24px 18px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  border: 1px solid rgba(100, 255, 255, 0.5);
+  transform: translate(-50%, -50%);
+}
+
+.upgradePopUp .upgradeCancel {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.upgradePopUp .upgradePopUpText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.upgradePopUp .upgradePopUpText p {
+  margin: 0;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #f9f7f7;
+  text-align: center;
+}
+
+.upgradePopUp .upgradePopUpFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 11px;
+}
+
+.upgradePopUpFooter .leftClaim {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.upgradePopUpFooter .leftClaim p {
+  margin: 0;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #f9f7f7;
+  text-align: center;
+}
+
+.upgradePopUpFooter .leftClaim button {
+  width: 134px;
+  height: 46px;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #02040f;
+  border-radius: 18px;
+  background-color: #f9f7f7;
+  box-shadow: rgba(249, 247, 247, 0.5) 3.95px 3.95px 0.6px;
+  border: none;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.upgradePopUpFooter .rightClaim {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.upgradePopUpFooter .rightClaim p {
+  margin: 0;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #f9f7f7;
+  text-align: center;
+}
+
+.upgradePopUpFooter .rightClaim button,
+.tonButton {
+  width: 134px;
+  height: 46px;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #02040f;
+  border-radius: 18px;
+  background-color: #64ffff;
+  box-shadow: rgba(100, 255, 255, 0.5) 3.95px 3.95px 0.6px;
+  border: none;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* line */
+
+.greenLinePopUp {
+  height: 0.3px;
+  background-color: #64ffff;
+  width: 111%;
+  margin-top: 34px;
+}
+
+@media screen and (max-width: 400px) {
+  .upgradePopUp {
+    width: 290px;
+  }
+}

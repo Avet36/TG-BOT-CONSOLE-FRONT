@@ -1,0 +1,80 @@
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 0.3px solid #64ffff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 6px 0;
+  z-index: 100;
+  background: #02040f;
+}
+
+.navBar div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.navBar div img {
+  width: 30px;
+  height: 30px;
+}
+
+.navBar div p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #ffffff;
+  margin-top: 6px;
+  user-select: none;
+}
+
+.active {
+  position: relative;
+  background-color: transparent;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.3);
+  filter: blur(20px);
+  pointer-events: none;
+  border-radius: 50px;
+}
+
+.friendsCircle {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(100, 255, 255, 1);
+  border-radius: 50%;
+  position: relative;
+  padding: 0 !important;
+  top: 3px;
+  right: -19px;
+  z-index: 2;
+}
+
+
+.taskCircle {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(100, 255, 255, 1);
+  border-radius: 50%;
+  position: relative;
+  padding: 0 !important;
+  top: 0px;
+  right: -18px;
+  z-index: 2;
+}

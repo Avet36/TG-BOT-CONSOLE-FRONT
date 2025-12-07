@@ -1,0 +1,68 @@
+.completed {
+  margin-top: 30px;
+  padding-bottom: 150px;
+}
+
+.completedContent .completedItem {
+  position: relative;
+  background-color: rgba(217, 217, 217, 0.2);
+  border-radius: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 10px 13px 16px;
+  margin-top: 16px;
+  gap: 5px;
+}
+
+.completedContent .completedItem img {
+  width: 22px;
+}
+
+.completedContent .completedItem .completedText h2 {
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  color: #f9f7f7;
+  margin: 0;
+}
+
+.completedContent .completedItem .completedText p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #64ffff;
+  margin: 0;
+  margin-top: 6px;
+}
+.completedContent .completedItem button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  width: 91px;
+  height: 26px;
+  color: #02040f;
+  border-radius: 18px;
+  background-color: #64ffff;
+  border: none;
+  z-index: 2;
+}
+
+.completedText {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .completedContent .completedItem .completedText h2 {
+    font-size: 16px;
+  }
+
+  .completedContent .completedItem {
+    padding: 5px 10px;
+  }
+}

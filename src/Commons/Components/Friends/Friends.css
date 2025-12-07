@@ -1,0 +1,249 @@
+.fon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.friends {
+  height: calc(100vh - 50px);
+  padding: 5px 26px 30px 26px;
+  user-select: none;
+  box-sizing: border-box;
+  padding-bottom: 150px;
+  position: relative;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+.friends h2 {
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 2px;
+  color: #f9f7f7;
+  margin: 0;
+}
+
+.friends .myFriends {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.friends .myFriends .myFriendsText p {
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 29px;
+  letter-spacing: 2px;
+  color: #f9f7f7;
+  margin: 0;
+  font-family: "Instrument Sans", serif;
+}
+
+.friends .myFriends .myFriendsClaim {
+  font-family: "Instrument Sans", serif;
+}
+
+.friends .myFriends .myFriendsClaim button {
+  width: 94px;
+  height: 29px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #02040f;
+  border-radius: 18px;
+  background-color: #64ffff;
+  box-shadow: rgba(100, 255, 255, 0.5) 3.95px 3.95px 0.6px;
+  position: relative;
+  border: none;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.friends .myFriends .myFriendsClaim p {
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  color: #64ffff;
+  margin: 0;
+  font-family: "Instrument Sans", serif;
+}
+
+.friends .friendsItems {
+  height: 290px;
+  max-height: 290px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow-y: auto;
+  margin-top: 30px;
+  padding-right: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+.friends .friendsItems::-webkit-scrollbar {
+  width: 3px;
+}
+
+.friends .friendsItems::-webkit-scrollbar-track {
+  background: #a0a1b1;
+}
+
+.friends .friendsItems::-webkit-scrollbar-thumb {
+  background: #64ffff;
+
+  border-radius: 1.5px;
+}
+
+.friends .friendsItems::-webkit-scrollbar-thumb:hover {
+  background: #64ffff;
+}
+
+.friends .friendsItems .friend {
+  background-color: rgba(217, 217, 217, 0.2);
+  padding: 5px 15px 5px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 23px;
+}
+
+.friendsItems .friend .friendIntro {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.friendIntro .friendText p {
+  width: 130px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #f9f7f7;
+  margin: 0;
+}
+
+.friendIntro .friendImg {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #d9d9d9;
+}
+
+.friendIntro .friendImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.friendsItems .friend .friendCp p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #f9f7f7;
+  font-family: "Instrument Sans", serif;
+}
+
+.friends .friendPointSuccess {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+}
+
+.friends .noFriends p {
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  color: #f9f7f7;
+  margin: 0;
+  font-family: "Instrument Sans", serif;
+}
+
+.friends .friendPointSuccess p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.friends .friendsButton {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 22px;
+}
+
+.friends .friendsButton .copy {
+  width: 215px;
+  height: 46px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  color: #02040f;
+  border-radius: 18px;
+  background-color: #64ffff;
+  box-shadow: rgba(100, 255, 255, 0.5) 3.95px 3.95px 0.6px;
+  border: none;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.friends .friendsButton .invite {
+  width: 215px;
+  height: 46px;
+  margin: 0 auto;
+  border-radius: 18px;
+  background: #2d2e37;
+  position: relative;
+  border: none;
+  z-index: 2;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  color: #64ffff;
+  line-height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 400px) {
+  .friends {
+    padding-top: 5px;
+  }
+  .friends h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .friends .friendsButton a {
+    font-size: 15px;
+  }
+}

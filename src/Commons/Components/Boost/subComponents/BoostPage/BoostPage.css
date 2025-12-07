@@ -1,0 +1,187 @@
+.boostPage {
+  margin-top: 48px;
+  padding-bottom: 150px;
+}
+
+.boostPage .boostPageSuccess {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.boostPageSuccess .boostTexts {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.boostPageSuccess p {
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #f9f7f7;
+  margin: 0;
+  font-family: "Instrument Sans", serif;
+}
+
+.boostPage .boostPageContent {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.boostPageContent .boostItem {
+  position: relative;
+  background-color: rgba(217, 217, 217, 0.2);
+  border-radius: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 22px 2px 53px;
+}
+
+.boostItem .boostDoubling {
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #02040f;
+  background-color: #ffffff;
+  position: absolute;
+  top: 26px;
+  left: 14px;
+  z-index: 2;
+}
+
+.boostItem .boostItemText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.boostItem .boostItemText .dailyBosst {
+  color: #64ffff !important;
+}
+
+.boostItem .boostItemText h2 {
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #f9f7f7;
+  margin: 0;
+}
+
+.boostItem .boostItemText p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.3px;
+  color: rgba(249, 247, 247, 0.7);
+  font-family: "Instrument Sans", serif;
+  margin: 0;
+}
+
+.boostItem .boostPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.boostPrice div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.boostItem .boostPrice p {
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  color: rgba(249, 247, 247, 0.7);
+  margin: 0;
+}
+
+.boostItem button {
+  width: 91px;
+  height: 26px;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #02040f;
+  border-radius: 18px;
+  background-color: #64ffff;
+  border: none;
+  z-index: 2;
+}
+
+.boostItem .rocket {
+  position: absolute;
+  left: -2px;
+  top: -7px;
+  z-index: 2;
+}
+
+.timer {
+  min-width: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.timer p {
+  font-weight: 700;
+  color: #64ffff !important;
+  font-size: 16px;
+  margin: 0;
+}
+
+.timer .countDown {
+  font-weight: 300;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  text-align: center;
+}
+
+.timeForFree {
+  padding: 5px;
+  width: auto;
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+  padding-right: 0;
+  font-family: "Instrument Sans", serif;
+  letter-spacing: 0;
+}
+
+@media screen and (max-width: 400px) {
+  .boostPageSuccess p {
+    font-size: 15px;
+  }
+  .boostItem button {
+    width: 75px;
+  }
+
+  .boostPageContent .boostItem {
+    padding-right: 10px;
+  }
+
+  .boostItem .boostItemText p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

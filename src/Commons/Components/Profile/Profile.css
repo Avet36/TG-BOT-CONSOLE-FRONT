@@ -1,0 +1,282 @@
+.fon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.profil {
+  padding: 30px 26px;
+  user-select: none;
+  overflow-y: auto;
+  height: calc(100vh - 115px);
+  box-sizing: border-box;
+  padding-bottom: 150px;
+  position: relative;
+  z-index: 1;
+}
+.profil::-webkit-scrollbar {
+  width: 3px;
+}
+
+.profil::-webkit-scrollbar-track {
+  background: #a0a1b1;
+}
+
+.profil::-webkit-scrollbar-thumb {
+  background: #64ffff;
+  border-radius: 1.5px;
+}
+.profil::-webkit-scrollbar-thumb:hover {
+  background: #64ffff;
+}
+
+.profil .imgAndName {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.imgAndName .profilImg {
+  width: 97px;
+  height: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.imgAndName .profilImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.imgAndName h2 {
+  margin: 0;
+  margin-top: 19px;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 22px;
+  color: #f9f7f7;
+}
+
+.profil .profilBalance {
+  margin-top: 51px;
+}
+
+.profil .profilBalance p {
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #f9f7f7;
+}
+
+.profil .profilBalance p span {
+  margin-left: 24px;
+}
+
+.profil .profilLine {
+  width: 100%;
+  height: 0.5px;
+  background-color: #64ffff;
+  margin-top: 24px;
+}
+
+.profil .profilWallet {
+  margin-top: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.profil .profilWallet h2 {
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 2px;
+  color: #f9f7f7;
+  margin: 0;
+  font-family: "Instrument Sans", serif;
+}
+
+.profil .profilWallet .profilWalletItem {
+  border-radius: 23px;
+  display: flex;
+  justify-content: space-between;
+  padding: 27px 24px 26px 26px;
+  background-color: rgba(217, 217, 217, 0.2);
+}
+
+.profil .profilWallet .profilWalletItem img {
+  position: relative;
+  z-index: 2;
+}
+
+.profil .profilWallet .profilWalletItem p {
+  margin: 0;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #f9f7f7;
+  font-family: "Instrument Sans", serif;
+}
+
+.profil .profilWallet p {
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #f9f7f7;
+}
+
+.profil button {
+  width: 212px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 11px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: #02040f;
+  border-radius: 18px;
+  background-color: #64ffff;
+  box-shadow: rgba(100, 255, 255, 0.5) 3.95px 3.95px 0.6px;
+  position: relative;
+  border: none;
+  z-index: 2;
+}
+
+/* modal */
+
+.profileOverlay {
+  position: fixed;
+  background-color: rgba(217, 217, 217, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.profilModal {
+  background-color: #02040f;
+  border-radius: 32px 32px 0 0;
+  padding: 76px 48px 0 48px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  width: -webkit-fill-available;
+  height: 350px;
+  border: 1px solid #64ffff;
+}
+
+.profilModal .profilText p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #f9f7f7;
+  text-align: center;
+}
+
+.profilModal .profilText p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #f9f7f7;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.profilModal .modalButtons {
+  margin-top: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 38px;
+}
+
+.profilModal .modalButtons .yes {
+  width: 134px;
+  height: 50px;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #4ebc3d;
+  border: none;
+  outline: none;
+  position: relative;
+  z-index: 2;
+  background-color: rgba(217, 217, 217, 0.2);
+  border-radius: 23px;
+}
+
+.profilModal .modalButtons .no {
+  width: 134px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #f20c10;
+  border: none;
+  outline: none;
+  position: relative;
+  z-index: 2;
+  background-color: rgba(217, 217, 217, 0.2);
+  border-radius: 23px;
+}
+
+.tonButton {
+  width: 212px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 11px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #02040f;
+  border-radius: 18px;
+  background-color: #64ffff;
+  box-shadow: rgba(100, 255, 255, 0.5) 3.95px 3.95px 0.6px;
+  position: relative;
+  border: none;
+  z-index: 2;
+}
+
+.tonButton .go1140934594 {
+  color: #02040f;
+}
+
+@media screen and (max-width: 400px) {
+  .profil {
+    padding-top: 10px;
+    padding-bottom: 80px;
+  }
+  .profil .profilWallet h2 {
+    font-size: 20px;
+  }
+  .profil .profilWallet {
+    margin-top: 10px;
+  }
+
+  .profil .imgAndName {
+    margin-top: 10px;
+  }
+}

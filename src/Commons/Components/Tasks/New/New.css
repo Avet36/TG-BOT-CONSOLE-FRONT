@@ -1,0 +1,81 @@
+.new {
+  margin-top: 30px;
+  padding-bottom: 150px;
+}
+
+.newContent .newItem {
+  position: relative;
+  background-color: rgba(217, 217, 217, 0.2);
+  border-radius: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 10px 13px 16px;
+  margin-top: 16px;
+  gap: 5px;
+}
+
+.newContent .newItem img {
+  width: 22px;
+}
+
+.newContent .newItem .newText h2 {
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  color: #f9f7f7;
+  margin: 0;
+}
+
+.newContent .newItem .newText p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #64ffff;
+  margin: 0;
+  margin-top: 6px;
+}
+.newContent .newItem button {
+  width: 100px;
+  height: 26px;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 19px;
+  color: #02040f;
+  border-radius: 18px;
+  background-color: #64ffff;
+  border: none;
+  z-index: 2;
+  text-transform: capitalize;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.ant-btn-variant-outlined:not(:disabled):not(.ant-btn-disabled):hover,
+.ant-btn-variant-dashed:not(:disabled):not(.ant-btn-disabled):hover {
+  color: #02040f;
+  border-color: none;
+  background: #64ffff;
+}
+
+.newText {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .newContent .newItem button {
+    width: 80px;
+  }
+
+  .newContent .newItem .newText h2 {
+    font-size: 15px;
+  }
+
+  .newContent .newItem {
+    padding: 5px 10px;
+  }
+}

@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.loader {
+  display: flex;
+  gap: 8px;
+}
+
+.bar {
+  width: 28px;
+  height: 25px;
+  background-color: #0f3460;
+  border: 2px solid #64ffff;
+  border-radius: 5px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    background-color: #0f3460;
+  }
+  50% {
+    transform: scale(1.1);
+    background-color: #00d4ff;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #0f3460;
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "name": "cpmobile",
+  "homepage": ".",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@orbs-network/ton-access": "^2.3.3",
+    "@reduxjs/toolkit": "^2.5.1",
+    "@telegram-web-app/core": "^0.0.1-beta.1",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@ton/core": "^0.60.1",
+    "@ton/crypto": "^3.3.0",
+    "@ton/ton": "^15.2.1",
+    "@tonconnect/sdk": "^3.1.0",
+    "@tonconnect/ui": "^2.1.0",
+    "@tonconnect/ui-react": "^2.1.0",
+    "ajv": "^8.17.1",
+    "ajv-keywords": "^5.1.0",
+    "antd": "^5.24.0",
+    "axios": "^1.7.9",
+    "buffer": "^6.0.3",
+    "framer-motion": "^12.5.0",
+    "ldrs": "^1.1.6",
+    "qrcode.react": "^4.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.1.5",
+    "react-scripts": "5.0.1",
+    "react-toastify": "^11.0.5",
+    "share-api-polyfill": "^1.1.1",
+    "tonweb": "^0.0.66",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "render-build": "npm install --legacy-peer-deps && npm run build && cp public/_redirects build/"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "source-map-loader": "^5.0.0",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
+  }
+}

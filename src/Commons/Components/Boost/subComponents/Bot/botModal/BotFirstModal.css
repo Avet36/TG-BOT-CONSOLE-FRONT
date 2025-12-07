@@ -1,0 +1,149 @@
+/* modal styles */
+
+.botOverlayFirst {
+  position: fixed;
+  background-color: rgba(217, 217, 217, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  opacity: 1.2;
+}
+
+.botModalFirst {
+  width: -webkit-fill-available;
+  height: 500px;
+  background-color: #02040f;
+  border-radius: 32px 32px 0 0;
+  padding: 26px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  border: 1px solid #64ffff;
+}
+
+.botModalFirst .modalTextFirst {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.botModalFirst .modalTextFirst h2 {
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 2px;
+  color: #f9f7f7;
+}
+
+.botModalFirst .modalTextFirst p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #f9f7f7;
+  margin: 0;
+  margin-top: 8px;
+  font-family: "Instrument Sans", serif;
+}
+
+.botModalFirst .modalToken {
+  margin-top: 50px;
+}
+
+.modalToken h2 {
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 2px;
+  margin: 0;
+  color: #f9f7f7;
+}
+
+.modalToken .selectToken {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  margin-top: 8px;
+  border-radius: 18px;
+  background-color: rgba(217, 217, 217, 0.2);
+}
+
+.modalToken .selectToken .textAndImg {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.modalToken .selectToken p {
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.botModalFirst button {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  width: 212px;
+  height: 43px;
+  color: #02040f;
+  border-radius: 18px;
+  background-color: #64ffff;
+  box-shadow: rgba(175, 252, 180, 0.5) 3.95px 3.95px 0.6px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+.cancelBot {
+  float: right;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  .botModalFirst {
+    height: 300px;
+  }
+
+  .bot .assistant .assistantIcon {
+    padding: 16px;
+  }
+  .bot .assistant .assistantIcon img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .bot .assistant .assistantText p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .bot button {
+    width: 85px;
+  }
+
+  .bot {
+    padding-bottom: 0;
+  }
+  .botModalFirst {
+    height: 400px;
+  }
+  .botModalFirst .modalToken {
+    margin-top: 25px;
+  }
+
+  .botModalFirst button {
+    margin-top: 35px;
+  }
+}

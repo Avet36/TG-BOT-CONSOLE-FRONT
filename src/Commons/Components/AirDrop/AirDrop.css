@@ -1,0 +1,85 @@
+.fon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.airdrop {
+  height: calc(100vh - 50px);
+  overflow-y: scroll;
+  padding: 25px 26px;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+.airdrop .airdropInfo p {
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #64ffff;
+  margin: 0;
+  text-align: center;
+}
+
+.airdrop .airdropInfo h2 {
+  font-weight: 200;
+  font-size: 35px;
+  line-height: 44px;
+  letter-spacing: 2px;
+  color: #64ffff;
+  margin: 0;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.airdrop .airdropPadding {
+  width: 245px;
+  height: 64px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background-image: linear-gradient(to top, #002229, #46b3b3);
+  margin-top: 16px;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+
+.airdrop .airdropInfo .airdropStayText {
+  width: 100%;
+  height: 60px;
+  border: 2px solid transparent;
+  background-color: #002229;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 56px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.airdrop .airdropImg {
+  width: 100%;
+  height: calc(100% - 50px);
+  object-fit: cover;
+  position: relative;
+  top: -70px;
+}
+
+/* ;loading airdrop */
+
+.airdropImg.loaded {
+  opacity: 1;
+}
+
+.airdropImg:not(.loaded) {
+  opacity: 0;
+}
